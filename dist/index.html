@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>restaurant-page2</title>
+        <style>
+            body {
+                margin: 0px;
+                padding: 0px;
+                font-family: sans-serif;
+                background-color: #404040;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            header {
+                display: flex;
+                min-width: 100%;
+                align-items: center;
+                justify-content: center;
+                background-color: #404040;
+            }
+            nav {
+                padding: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-width: 100%;
+                gap: 20px;
+                background-color: #404040;
+            }
+            nav button {
+                padding: 5px 10px;
+                border-radius: 5px;
+                border: none;
+                background-color: #cde5f0;
+                cursor: pointer;
+                /*transition: background-color 0.3s;*/
+            }
+            #content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                min-height: 400px;
+                color: #ffffff;
+            }
+            #content.loaded {
+                background-image: url('./welcome-img.jpg');
+                background-size: cover;
+                background-color: #6e6e6e;
+            }
+            h1 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                /* border: #ffffff 1px solid; */
+                border-radius: 5px;
+                padding: 20px;
+                background-color: rgba(0, 0, 0, 0.4);
+            }
+            p {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <button>Home</button>
+                <button>Menu</button>
+                <button>Contact</button>
+            </nav>
+        </header>
+        <div id="content">
+        </div>
+        <div id="app"></div>
+        <script src="main.js"></script>
+    </body>
+</html>
